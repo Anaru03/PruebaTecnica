@@ -17,3 +17,11 @@ class Main_Program
         Console.WriteLine($"Es Par: {resultadoEvaluacion.EsPar}");
     }
 }
+
+public static class CalculadoraDeNumeros
+{
+    public static int EncontrarMayor(int num1, int num2, int num3)
+    {
+        return Math.Max(num1, Math.Max(num2, num3));
+    }
+}
