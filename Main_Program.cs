@@ -25,3 +25,22 @@ public static class CalculadoraDeNumeros
         return Math.Max(num1, Math.Max(num2, num3));
     }
 }
+
+public class ResultadoEvaluacion
+{
+    public bool EsPrimo { get; set; }
+    public bool EsPar { get; set; }
+}
+
+public static class EvaluadorDeNumeros
+{
+    public static ResultadoEvaluacion EvaluarNumero(int n)
+    {
+        ResultadoEvaluacion resultado = new ResultadoEvaluacion
+        {
+            EsPar = (n % 2 == 0),
+            EsPrimo = EsNumeroPrimo(n)
+        };
+        return resultado;
+    }
+}
