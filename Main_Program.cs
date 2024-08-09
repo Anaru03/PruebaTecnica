@@ -1,3 +1,9 @@
+/*
+    Prueba Técnica: Base de Datos y Lógica de Programación´
+    Sección 2: Problemas de Programación en C#
+    
+    Ruth de León - 2024 
+*/
 using System;
 
 class Main_Program
